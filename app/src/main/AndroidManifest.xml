@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.planitout">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application
+        android:name=".PlanItOutApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/planitout_logo3"
+        android:label="PlanItOut"
+        android:roundIcon="@drawable/planitout_circle"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlanItOut"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="35">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${GOOGLE_API_KEY}" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.App.SplashScreen"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SignupActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".activities.CreateActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.EditEventActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.CalendarActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.EventDetailActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.ForgotPasswordActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.MapsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activities.ProfileViewActivity"
+             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.FriendProfileViewActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>

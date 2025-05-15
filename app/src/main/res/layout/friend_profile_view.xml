@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tanLight"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/unfriendButton"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_gravity="top|start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Unfriend"
+            android:src="@drawable/baseline_close_24"
+            app:tint="@color/purpleDark" />
+
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/profile_circle"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/usernameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/purpleDark"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/editTextBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Bio"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:scrollHorizontally="false"
+                android:inputType="textMultiLine"
+                android:enabled="false"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:textColor="@color/tanLight"
+                android:textColorHint="@color/tanLight"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/editTextLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Location"
+                android:enabled="false"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:textColor="@color/tanLight"
+                android:textColorHint="@color/tanLight"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/upcomingEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Upcoming Events"
+            android:textColor="@color/purpleDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clipToPadding="false" />
+
+
+
+    </LinearLayout>
+</ScrollView>

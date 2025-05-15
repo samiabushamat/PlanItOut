@@ -1,0 +1,8 @@
+<!-- drawable/dot_both.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:type="linear"
+        android:startColor="@color/event_blue"
+        android:endColor="@color/red"
+        android:angle="45"/>
+</shape>

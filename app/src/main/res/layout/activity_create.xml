@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tanLight"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="10dp"
+    tools:context=".activities.CreateActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/viewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Create Event"
+            android:textColor="@color/purpleDark"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="5dp"
+            />
+
+        <!-- Event Image Selection -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:id="@+id/addEventImage"
+            android:background="@drawable/tan_border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/roundedCardView"
+                app:cardCornerRadius="30dp"
+                android:visibility="gone"
+                android:elevation="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/eventImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/addImageIcon"
+                android:src="@drawable/baseline_add_photo_alternate_24"
+                app:tint="@color/tan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addImageText"
+                android:text="Add Event Image"
+                android:textColor="@color/tan"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Event Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:tint="@color/tan" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Event Name"
+                android:id="@+id/eventName"
+                android:textColorHint="@color/tan"
+                android:textColor="@color/tan"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <!-- Description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_description_24"
+                app:tint="@color/tan" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:id="@+id/eventDescription"
+                android:textColorHint="@color/tan"
+                android:textColor="@color/tan"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:background="@null" />
+        </LinearLayout>
+
+        <!-- Location -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_add_location_alt_24"
+                app:tint="@color/tan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventLocation"
+                android:text="Location"
+                android:textColor="@color/tan"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <!-- Date & Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tan_border"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_access_time_24"
+                app:tint="@color/tan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventDateTime"
+                android:text="Date &amp; Time"
+                android:textColor="@color/tan"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Private Event"
+                android:textColor="@color/purpleMain"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchPrivate"
+                app:trackTint="@color/track_color"
+                app:thumbTint="@color/thumb_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In-Person Event"
+                android:textColor="@color/purpleMain"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switchInPerson"
+                app:trackTint="@color/track_color"
+                app:thumbTint="@color/thumb_color"
+                android:checked="true"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/createEventBtn"
+            android:text="Create Event"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/purpleDark"
+            android:textColor="@color/tanLight"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

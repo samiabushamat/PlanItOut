@@ -1,0 +1,135 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:background="@color/tanLight">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:background="@color/event_blue"
+                android:elevation="8dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="4dp">
+
+                    <TextView
+                        android:id="@+id/eventTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/tanLight" />
+
+                    <ImageButton
+                        android:id="@+id/deleteEventButton"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="4dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/baseline_delete_24"
+                        android:contentDescription="Delete Event"
+                        app:tint="@color/tanLight"
+                        android:scaleType="fitXY"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/eventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/tanLight"/>
+
+                <TextView
+                    android:id="@+id/eventLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/tanLight"/>
+
+                <TextView
+                    android:id="@+id/eventStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tanLight"/>
+
+                <TextView
+                    android:id="@+id/eventCityStateZip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/tanLight"/>
+
+                <TextView
+                    android:id="@+id/eventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@color/tanLight"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/viewAttendeesButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="View Attendees"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/purpleDark"
+                        android:textColor="@color/tanLight"
+                        android:elevation="12dp"
+                        android:layout_marginEnd="6dp"/>
+
+                    <Button
+                        android:id="@+id/editEventButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Edit"
+                        android:padding="12dp"
+                        android:textSize="14sp"
+                        android:backgroundTint="@color/purpleDark"
+                        android:textColor="@color/tanLight"
+                        android:elevation="12dp"
+                        android:layout_marginStart="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

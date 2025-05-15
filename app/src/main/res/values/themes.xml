@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PlanItOut" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purpleMain</item>
+        <item name="colorPrimaryVariant">@color/purpleMain</item>
+        <item name="colorOnPrimary">@color/tanLight</item>
+        <item name="android:statusBarColor">@color/purpleDark</item>
+    </style>
+
+    <style name="Theme.PlanItOut" parent="Base.Theme.PlanItOut" />
+
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground"> @color/tanLight </item>
+        <item name="windowSplashScreenAnimatedIcon"> @drawable/planitout_splash </item>
+        <item name="postSplashScreenTheme"> @style/Base.Theme.PlanItOut </item>
+    </style>
+</resources>

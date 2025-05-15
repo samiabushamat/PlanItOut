@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- calendar button -->
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="@string/nav_calendar"
+        />
+    <!-- add event button -->
+    <item
+        android:id="@+id/nav_add_event"
+        android:icon="@drawable/baseline_create_24"
+        android:title="@string/nav_add_event"/>
+    <!-- goto map button -->
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/baseline_map_24"
+        android:title="@string/nav_map"/>
+</menu>

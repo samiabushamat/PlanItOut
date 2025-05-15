@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local configuration
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# IDE-specific
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Native build
+.cxx/
+.externalNativeBuild/
+
+# Captures
+captures/
+
+# Log/Crashlytics files (if using Firebase Crashlytics)
+crashlytics-build.properties
+fabric.properties

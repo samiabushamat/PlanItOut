@@ -1,0 +1,21 @@
+<resources>
+    <style name="CustomSearchView" parent="Widget.AppCompat.SearchView">
+        <!-- Text Appearance -->
+        <item name="android:textColor">@color/purpleDark</item>
+        <item name="android:textColorHint">@color/purpleDark</item>
+        <item name="editTextColor">@color/purpleDark</item>
+
+        <!-- Remove underline focus -->
+        <item name="queryBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:padding">5dp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

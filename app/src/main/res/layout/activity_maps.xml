@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tanLight"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explore Events Near You"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        android:textColor="@color/purpleDark"
+        android:textAlignment="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search locations, explore events, and make plans effortlessly!"
+        android:textSize="15sp"
+        android:textColor="@color/purpleMain"
+        android:textAlignment="center"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressSearch"
+        android:layout_marginTop="165dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="15dp"
+        android:hint="Search for a location"
+        android:textColorHint="@color/purpleDark"
+        android:textColor="@color/purpleDark"
+        android:textStyle="bold"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationText"
+        android:textColor="@color/purpleMain"
+        android:layout_marginTop="225dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="30dp"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+</FrameLayout>

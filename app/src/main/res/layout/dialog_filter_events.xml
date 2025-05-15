@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@drawable/dialog_background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter Events"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/tan"
+        android:padding="15dp"
+        android:background="@color/purpleDark"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/purpleMain"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All dates"
+            android:checked="true"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="-10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today"
+            android:layout_marginBottom="-10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_this_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This week"
+            android:layout_marginBottom="-10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_this_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This month"/>
+    </RadioGroup>
+
+    <!-- Location Filter -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/purpleMain"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp">
+
+        <RadioButton
+            android:id="@+id/radio_anywhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anywhere"
+            android:checked="true"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginTop="-10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_10_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Within 10 miles"
+            android:layout_marginBottom="-10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_30_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Within 30 miles"
+            android:layout_marginBottom="-10dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remote"
+            android:layout_marginBottom="-10dp"/>
+    </RadioGroup>
+
+</LinearLayout>

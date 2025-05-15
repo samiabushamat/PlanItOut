@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PlanItOut</string>
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_add_event">Create Event</string>
+    <string name="nav_map">Map</string>
+    <string name="event_title">Event Title</string>
+    <string name="event_date">Date: Jan 1, 2025</string>
+    <string name="event_location">Location: New York</string>
+    <string name="city_state_zip">City, State, ZIP</string>
+    <string name="street_address">Street Address</string>
+    <string name="posted_by_unknown">Posted by: Unknown</string>
+    <string name="view_attendees">View Attendees</string>
+    <string name="attendees">Attendees</string>
+    <string name="close">Close</string>
+    <string name="delete_event">Delete Event</string>
+
+    <string-array name="location_options">
+        <item>Anywhere</item>
+        <item>Within 10 miles</item>
+        <item>Within 20 miles</item>
+        <item>Within 50 miles</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    android:background="@color/tanLight"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@color/event_blue"
+        android:elevation="4dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/upcomingEventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/tanLight"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/upcomingEventCreatedBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/tanLight"
+            android:textStyle="italic"
+            android:paddingBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/upcomingEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tanLight"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/upcomingEventStreet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/tanLight"/>
+
+        <TextView
+            android:id="@+id/upcomingEventCityStateZip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/tanLight"/>
+
+        <TextView
+            android:id="@+id/upcomingEventTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/tanLight"
+            android:textStyle="bold"
+            android:paddingTop="4dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

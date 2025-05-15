@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Selected state: Light Purple background -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/purpleLight" />
+        </shape>
+    </item>
+
+    <!-- Default state: Transparent background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

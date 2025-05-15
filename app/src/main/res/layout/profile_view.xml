@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tanLight"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purpleDark"
+                android:text="Log Out"
+                android:textColor="@color/tanLight"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/myFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purpleDark"
+                android:text="Friends"
+                android:textColor="@color/tanLight"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:background="@drawable/profile_circle">
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/buttonEditProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/purpleDark"
+            android:text="Change Profile Picture"
+            android:textColor="@color/tanLight"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/usernameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/purpleDark"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tan_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <EditText
+                android:id="@+id/editTextBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="Bio"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:scrollHorizontally="false"
+                android:textColor="@color/tanLight"
+                android:textColorHint="@color/tanLight"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/buttonEditBio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_edit"
+                app:tint="@color/tanLight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tan_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="18dp">
+
+            <EditText
+                android:id="@+id/editTextLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="Location"
+                android:textColor="@color/tanLight"
+                android:textColorHint="@color/tanLight"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/buttonEditLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_edit"
+                app:tint="@color/tanLight" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="My Preferences"
+            android:textColor="@color/purpleDark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/tagContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:alignItems="center"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start" />
+
+        <Button
+            android:id="@+id/buttonAddPreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:backgroundTint="@color/purpleDark"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="+ Add Preference"
+            android:textColor="@color/tanLight"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/rounded_popup_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/popupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attendees"
+        android:textSize="18sp"
+        android:textColor="@color/purpleDark"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/attendeesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:background="@color/tanLight"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:textSize="16sp"
+        android:backgroundTint="@color/purpleDark"
+        android:textColor="@color/tanLight"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

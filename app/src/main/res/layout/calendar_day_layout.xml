@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="55dp"
+    android:layout_height="55dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/bg_day_selector">
+
+    <TextView
+        android:id="@+id/calendarDayText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Created event indicator -->
+    <View
+        android:id="@+id/dotCreated"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/dot_created" />
+
+    <!-- Attendee event indicator -->
+    <View
+        android:id="@+id/dotAttendee"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/dot_attendee"
+        android:visibility="gone"/>
+
+    <!-- Both created & attendee indicator -->
+    <View
+        android:id="@+id/dotBoth"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/dot_both"
+        android:visibility="gone"/>
+
+</FrameLayout>
