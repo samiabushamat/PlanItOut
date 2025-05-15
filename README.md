@@ -47,13 +47,6 @@ PlanItOut is an Android application developed as a group project. The app helps 
 
 <h2 align="center">🎥 Demo Video</h2>
 
-<p align="center">
-  <video width="400" controls>
-    <source src="app/assets/Demo.mp4" type="video/mp4">
-    Your browser does not support the video tag.  
-    <a href="app/assets/Demo.mp4">Click here to view the video</a>
-  </video>
-</p>
-
+[🎥 Watch Demo](app/assets/Demo.mp4)
 
 
