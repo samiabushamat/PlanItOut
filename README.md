@@ -34,20 +34,20 @@ PlanItOut is an Android application developed as a group project. The app helps 
    git clone https://github.com/samiabushamat/PlanItOut.git
 
 
-   ## Screenshots
 
 ## Screenshots
 
-### Login
-![Login](LogInPhoto.png)
+### Login Screen
+![Login](app/assets/LogInPhoto.png)
 
-### Profile
-![Profile](ProfileView.png)
+### Profile View
+![Profile](app/assets/ProfileView.png)
 
 ### Created Events
-![Created Events](CreatedEvents.png)
+![Created Events](app/assets/CreatedEvents.png)
 
 ## Demo Video
 
-[![Watch the Demo](CreatedEvents.png)](Demo.mp4)
+[![Watch the Demo](app/assets/CreatedEvents.png)](app/assets/Demo.mp4)
+
 
