@@ -35,21 +35,19 @@ PlanItOut is an Android application developed as a group project. The app helps 
 
 
 
-## Screenshots
+<h2>App Screenshots</h2>
 
-### Login Screen
-<img src="app/assets/LogInPhoto.png" alt="Login" width="300"/>
+<div style="display: flex; gap: 10px; flex-wrap: wrap;">
+  <img src="app/assets/LogInPhoto.png" alt="Login" width="200"/>
+  <img src="app/assets/CreatedEvents.png" alt="Created Events" width="200"/>
+  <img src="app/assets/ProfileView.png" alt="Profile View" width="200"/>
+</div>
 
-### Profile View
-<img src="app/assets/ProfileView.png" alt="Profile View" width="300"/>
+<h2>Demo Video</h2>
 
-### Created Events
-<img src="app/assets/CreatedEvents.png" alt="Created Events" width="300"/>
+<div style="display: flex;">
+  <video src="app/assets/Demo.mp4" width="300" controls></video>
+</div>
 
-## Demo Video
-
-<video src="app/assets/Demo.mp4" width="400" controls>
-  Your browser does not support the video tag.
-</video>
 
 
