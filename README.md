@@ -32,22 +32,28 @@ PlanItOut is an Android application developed as a group project. The app helps 
 1. Clone the repository:
    ```bash
    git clone https://github.com/samiabushamat/PlanItOut.git
+   
+<h2 align="center">📸 App Screenshots</h2>
 
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
+  <img src="app/assets/LogInPhoto.png" alt="Login Screen" width="250" style="margin: 10px;"/>
+  <img src="app/assets/CreatedEvents.png" alt="Created Events" width="250" style="margin: 10px;"/>
+  <img src="app/assets/ProfileView.png" alt="Profile View" width="250" style="margin: 10px;"/>
 
-<h2>App Screenshots</h2>
-
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <img src="app/assets/LogInPhoto.png" alt="Login" width="200"/>
-  <img src="app/assets/CreatedEvents.png" alt="Created Events" width="200"/>
-  <img src="app/assets/ProfileView.png" alt="Profile View" width="200"/>
 </div>
 
-<h2>Demo Video</h2>
+<br/>
 
-<div style="display: flex;">
-  <video src="app/assets/Demo.mp4" width="300" controls></video>
-</div>
+<h2 align="center">🎥 Demo Video</h2>
+
+<p align="center">
+  <video width="400" controls>
+    <source src="app/assets/Demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+    <a href="app/assets/Demo.mp4">Click here to view the video</a>
+  </video>
+</p>
 
 
 
