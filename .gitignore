@@ -27,3 +27,4 @@ captures/
 # Log/Crashlytics files (if using Firebase Crashlytics)
 crashlytics-build.properties
 fabric.properties
+google-services.json
